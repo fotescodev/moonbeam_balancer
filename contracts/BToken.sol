@@ -14,6 +14,7 @@
 pragma solidity 0.5.12;
 
 import "./BNum.sol";
+import "hardhat/console.sol";
 
 // Highly opinionated token implementation
 
