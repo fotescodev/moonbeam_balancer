@@ -12,7 +12,7 @@ task("accounts", "Prints the list of accounts", async () => {
   }
 });
 
-PRIVATE_KEY = '99B3C12287537E38C90A9219D4CB074A89A16E9CDB20BF85728EBD97C343E342';
+PRIVATE_KEY = '';
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
