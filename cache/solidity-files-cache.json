@@ -1,0 +1,826 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/BColor.sol": {
+      "lastModificationDate": 1612917945323,
+      "contentHash": "37c62a4866ecb23f424c73405c33151a",
+      "sourceName": "contracts/BColor.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "BBronze",
+        "BColor"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/BConst.sol": {
+      "lastModificationDate": 1612917945323,
+      "contentHash": "93b871088945a91e76e3b4316299e1a7",
+      "sourceName": "contracts/BConst.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BColor.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "BConst"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/BNum.sol": {
+      "lastModificationDate": 1612917945323,
+      "contentHash": "bac0f7c23ff67e3695b8fb800b66c87d",
+      "sourceName": "contracts/BNum.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BConst.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "BNum"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/test/TMath.sol": {
+      "lastModificationDate": 1612917945324,
+      "contentHash": "a678b9f15bbce0c12171d1bd520b6d9b",
+      "sourceName": "contracts/test/TMath.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BMath.sol",
+        "../BNum.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "TMath"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/BMath.sol": {
+      "lastModificationDate": 1612917945323,
+      "contentHash": "366d4328d36e1072bdc4c0713fcef6b9",
+      "sourceName": "contracts/BMath.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BNum.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "BMath"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/BPool.sol": {
+      "lastModificationDate": 1613000469066,
+      "contentHash": "1f92d3fbe2a6e2f380b3aa17fffe81ac",
+      "sourceName": "contracts/BPool.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BToken.sol",
+        "./BMath.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "BPool"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/BToken.sol": {
+      "lastModificationDate": 1613000490215,
+      "contentHash": "8b89c4b548ececb4a2c6262dda9d5b07",
+      "sourceName": "contracts/BToken.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BNum.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "BToken",
+        "BTokenBase",
+        "IERC20"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1613537616901,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/mocks/token.sol": {
+      "lastModificationDate": 1613000662861,
+      "contentHash": "7923b8c5ea6a241c29fa1ba0f720e7dc",
+      "sourceName": "contracts/mocks/token.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.12"
+      ],
+      "artifacts": [
+        "MockToken"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1613537621225,
+      "contentHash": "22fd452b5721fdbf411ef554c2c80b76",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/node_modules/@openzeppelin/contracts/GSN/Context.sol": {
+      "lastModificationDate": 1613537619294,
+      "contentHash": "32a66f6f4d0584b403f26f8e5e4d17b5",
+      "sourceName": "@openzeppelin/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1613537621226,
+      "contentHash": "183ff1f5e5f04bcfa85cee597bcb0236",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1613537619296,
+      "contentHash": "d208da96b6f6c1d204ee8248087cf2d7",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/DAI.sol": {
+      "lastModificationDate": 1613464737428,
+      "contentHash": "1e703f9a9302f6755670829ac0cc8a4e",
+      "sourceName": "contracts/DAI.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.12"
+      ],
+      "artifacts": [
+        "DAI"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/BFactory.sol": {
+      "lastModificationDate": 1613002610510,
+      "contentHash": "ed8e8f5cc8e0396169d3a4769fd12173",
+      "sourceName": "contracts/BFactory.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BPool.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "BFactory"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/test/echidna/TBPoolJoinPool.sol": {
+      "lastModificationDate": 1612917945324,
+      "contentHash": "8aa34d6d624e610aee255f915ef6a10b",
+      "sourceName": "contracts/test/echidna/TBPoolJoinPool.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BNum.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "TBPoolJoinPool"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/test/echidna/TBPoolJoinExitPoolNoFee.sol": {
+      "lastModificationDate": 1612917945324,
+      "contentHash": "d5b8a0297cd0b71717946714c57de845",
+      "sourceName": "contracts/test/echidna/TBPoolJoinExitPoolNoFee.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BNum.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "TBPoolJoinExitNoFee"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/test/echidna/TBPoolJoinExitPool.sol": {
+      "lastModificationDate": 1612917945324,
+      "contentHash": "2ee3113a069659220e61a632ffb59d55",
+      "sourceName": "contracts/test/echidna/TBPoolJoinExitPool.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BNum.sol"
+      ],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "TBPoolJoinExit"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/ExchangeProxy.sol": {
+      "lastModificationDate": 1612917945324,
+      "contentHash": "10e736a288c20943364ab4a3447bc7eb",
+      "sourceName": "contracts/ExchangeProxy.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "ExchangeProxy",
+        "PoolInterface",
+        "TokenInterface"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/Migrations.sol": {
+      "lastModificationDate": 1612917945324,
+      "contentHash": "cf05bc8bd6ec7b5077a32febe9cfe4cf",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/Multicall.sol": {
+      "lastModificationDate": 1613455581158,
+      "contentHash": "2de81a418b7cf68444e9c497dc3b675f",
+      "sourceName": "contracts/Multicall.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/test/TToken.sol": {
+      "lastModificationDate": 1612917945324,
+      "contentHash": "7da71043ac8b162e041a4635e375f1ea",
+      "sourceName": "contracts/test/TToken.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.5.12"
+      ],
+      "artifacts": [
+        "TToken"
+      ]
+    },
+    "/Users/dmitrii/Moonbeam/Balancer-demo/moonbeam-balancer-core/contracts/WETH.sol": {
+      "lastModificationDate": 1613465125176,
+      "contentHash": "8cddaf84d61838bba5d4396a023088d4",
+      "sourceName": "contracts/WETH.sol",
+      "solcConfig": {
+        "version": "0.5.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.12"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    }
+  }
+}

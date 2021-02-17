@@ -1,12 +1,17 @@
-// const PrivateKeyProvider = require ('./private-provider')
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+// Standalone Development Node Private Key
+//const privateKeyDev = '99B3C12287537E38C90A9219D4CB074A89A16E9CDB20BF85728EBD97C343E342';
 
 module.exports = {
     networks: {
-        development: {
+        // ganache-cli -f https://eth-mainnet.alchemyapi.io/v2/V4aHOOcFKxvmZcNCdeWmXKRU5X-Ia_jB -i 1
+        
+        ganache: {
             host: 'localhost', // Localhost (default: none)
             port: 8545, // Standard Ethereum port (default: none)
-            network_id: '*', // Any network (default: none)
-            gas: 10000000,
+            network_id: '*', // Ethereum Mainnet 
+            gas: 6721975,
+            gasPrice: 20000000000
         },
 
         // moonbeam: {
@@ -18,8 +23,8 @@ module.exports = {
             host: 'localhost',
             network_id: '*',
             port: 8555,
-            gas: 0xfffffffffff,
-            gasPrice: 0x01,
+            gas: 6721975,
+            gasPrice: 0,
         },
     },
     // Configure your compilers
@@ -31,7 +36,6 @@ module.exports = {
                     enabled: true,
                     runs: 100,
                 },
-                evmVersion: 'byzantium',
             },
         },
     },

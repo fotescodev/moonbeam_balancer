@@ -6,7 +6,6 @@ const exchangeAbi = require("../build/contracts/BPool.json").abi;
 
 const tokenData = require("../build/contracts/MockToken.json").bytecode;
 const tokenAbi = require("../build/contracts/MockToken.json").abi;
-
 const { getReceipt } = require("./getReceipt");
 
 // Variables definition
@@ -16,6 +15,7 @@ const wallet = new ethers.Wallet(privKey, provider);
 
 // Create transaction
 const deploy = async () => {
+  
   console.log(`Attempting to deploy factory`);
 
   const tx = await wallet.sendTransaction({
@@ -23,11 +23,8 @@ const deploy = async () => {
     data,
   });
 
-  console.log(`Transaction successful with hash: ${tx.hash}`);
-  const receipt = await getReceipt(tx.hash);
-  console.log(receipt.gasUsed.toString());
-
-  const factoryAddress = receipt.contractAddress;
+  const factoryAddress = factoryAbi.networks;
+  console.log({factoryAddress})
   const factory = new ethers.Contract(factoryAddress, factoryAbi, provider);
   const factoryInstance = factory.connect(wallet);
 
