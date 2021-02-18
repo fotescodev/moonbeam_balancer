@@ -83,6 +83,7 @@ const deploy = async () => {
   const txLast = await token2Instance.approve(exchangeAddress, toMint);
   await getReceipt(txLast.hash);
 
+  
   const exchange = new ethers.Contract(exchangeAddress, exchangeAbi, provider);
   const exchangeInstance = exchange.connect(wallet);
 
